@@ -3,6 +3,8 @@ from gpiozero.tools import random_values
 from signal import pause
 from time import sleep
 
+# groups the LEDS from each wing of the tree so I can 
+# make them do things together or individually
 tree = LEDBoard(
     star=LEDBoard(2),
     brancha=LEDBoard(top=17, middle=4, bottom=14),
